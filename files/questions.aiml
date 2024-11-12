@@ -31,7 +31,7 @@
     <category>
 	    <pattern>yesdata</pattern>
 	    <template>Thats great! There are a variety of different careers in the coputer science field involving working with data.
-	    <br></br><bre></bre>
+	    <br></br><br></br>
 	    Do you enjoy analyzing and interpreting data, or organizing and managing the storage/use of data?
 	    <button>
 	        <text>Analyzing and Interpreting</text>

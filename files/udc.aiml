@@ -2,6 +2,6 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>I have no answer for that. Please type HI or HELLO to start a new chat with me.</template>
   </category>
 </aiml>
