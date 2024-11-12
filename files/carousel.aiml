@@ -4,7 +4,7 @@
 	
     <category>
         <pattern>CSummary</pattern>
-        <template>Use the arrow to navigae through some career options
+        <template>Use the arrow to navigate through some career options
 	        <carousel>
 	            
 	            <card> <!-- 1 -->

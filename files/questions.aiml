@@ -61,7 +61,7 @@
     <!-- Choose Database Management -->
     <category>
         <pattern>DManage</pattern>
-        <template>Fantastic! Consider a career as a Data Scientist!
+        <template>Fantastic! Consider a career as a Database Administrator!
                 <card><!-- 5-->
 	                <image>https://images.pexels.com/photos/4974916/pexels-photo-4974916.jpeg</image>
 	                <title>Database Administrator (DBA) </title>
@@ -92,7 +92,7 @@
     <!-- Yes Sec - Choose CyberSecurity Analyst -->
     <category>
 	    <pattern>yessec</pattern>
-	    <template>Thats great! Consider a career as a Data Scientist!
+	    <template>Thats great! Consider a career as a CyberSecurity Analyst!
 	            <card><!-- 3 -->
 	                <image>https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg</image>
 	                <title>Cybersecurity Analyst</title>

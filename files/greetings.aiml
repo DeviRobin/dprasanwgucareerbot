@@ -27,7 +27,7 @@
         <template><srai>hi</srai></template>
     </category>
     
-    
+	
 	<category>
 	    <pattern>my name is *</pattern>
 	    <template>Thank you for using CareerBot <star/> <think><set name = "name"><star/></set></think>. Lets get started! 
@@ -36,7 +36,7 @@
 	    Type START to begin career counseling.
 	    </template>
     </category>
-   
+    
     <category>
         <pattern>I am *</pattern>
         <template><srai>My name is <star/></srai></template>
