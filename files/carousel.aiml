@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+    <category>
+        <pattern>CSummary</pattern>
+        <template>Use the arrow to navigae through some career options
+	        <carousel>
+	            
+	            <card> <!-- 1 -->
+	                <image>https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg</image>
+	                <title>Software Developer</title>
+	                <subtitle>Develops and maintains software applications, often specializing in specific programming languages or frameworks.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>SofDevInfo</postback>
+                    </button>
+                </card>
+                    
+                <card><!-- 2 -->
+                    <image>https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg</image>
+                    <title>Data Scientist</title>
+                    <subtitle>Analyzes and interprets complex data to help companies make data-driven decisions, often using machine learning and statistical methods.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>DatSciInfo</postback>
+                    </button>
+                </card>
+                
+	            <card><!-- 3 -->
+	                <image>https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg</image>
+	                <title>Cybersecurity Analyst</title>
+	                <subtitle>Protects an organization's systems and data by identifying security risks and implementing defensive measures.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>CybSecInfo</postback>
+                    </button>
+                </card>
+                
+                <card><!-- 4 -->
+	                <image>https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg</image>
+	                <title>Systems Administrator</title>
+	                <subtitle>Manages and maintains an organization's IT infrastructure, including servers, networks, and hardware.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>SysAdmInfo</postback>
+                    </button>
+                </card>
+                
+                <card><!-- 5-->
+	                <image>https://images.pexels.com/photos/4974916/pexels-photo-4974916.jpeg</image>
+	                <title>Database Administrator (DBA) </title>
+	                <subtitle>Manages and optimizes databases, ensuring data availability, integrity, and security within an organization.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>DBAInfo</postback>
+                    </button>
+                    <button>
+	                    <text>Back to Start</text>
+	                    <postback>start</postback>
+                    </button>
+                </card>
+                
+            </carousel>
+	    </template>
+    </category>
+
+</aiml>

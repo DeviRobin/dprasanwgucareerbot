@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	<category>
+	    <pattern>SofDevInfo</pattern>
+	    <template>Software Developer – Develops and maintains software applications, often specializing in specific programming languages or frameworks.
+	    <button>
+	        <text>back to summary</text>
+	        <postback>CSummary</postback>
+        </button>
+        </template>
+    </category> 
+	
+	<category>
+	    <pattern>DatSciInfo</pattern>
+	    <template>Data Scientist – Analyzes and interprets complex data to help companies make data-driven decisions, often using machine learning and statistical methods.
+	    <button>
+	        <text>back to summary</text>
+	        <postback>CSummary</postback>
+        </button>
+        </template>
+    </category> 
+
+	<category>
+	    <pattern>CybSecInfo</pattern>
+	    <template>Cybersecurity Analyst – Protects an organization's systems and data by identifying security risks and implementing defensive measures.
+	    <button>
+	        <text>back to summary</text>
+	        <postback>CSummary</postback>
+        </button>
+        </template>
+    </category> 
+    
+	<category>
+	    <pattern>SysAdmInfo</pattern>
+	    <template>Systems Administrator – Manages and maintains an organization's IT infrastructure, including servers, networks, and hardware.
+	    <button>
+	        <text>back to summary</text>
+	        <postback>CSummary</postback>
+        </button>
+        </template>
+    </category>     
+    
+	<category>
+	    <pattern>DBAInfo</pattern>
+	    <template>Database Administrator (DBA) – Manages and optimizes databases, ensuring data availability, integrity, and security within an organization.
+	    <button>
+	        <text>back to summary</text>
+	        <postback>CSummary</postback>
+        </button>
+        </template>
+    </category>     
+    
+    
+
+
+
+
+</aiml>

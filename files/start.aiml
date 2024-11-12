@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	<category>
+	    <pattern>start</pattern>
+	    <template>Great! Here are a few optionns: 
+	    <br></br><br></br>
+	    Select "Summary" to see a list of 5 Computer Science Career Options
+	    <br></br> <br></br>
+	    Select "Help" to get some career counseling to determine which career may be the best for you
+	    <reply>
+	        <text>Summary</text>
+	        <postback>CSummary</postback>
+        </reply>
+	    <reply>
+	        <text>Help</text>
+	        <postback>CHelp</postback>
+        </reply>
+	    </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+   <category>
+        <pattern>CHelp</pattern>
+        <template>Okay, <get name="name"></get>, lets do a quick quiz figure out which career suits you best!
+        <br></br>I'll ask you some questions, please select YES or NO, unless instructed otherwise. 
+            <button>
+                <text>Start Quiz</text>
+                <postback>CStartQuiz</postback>
+            </button>
+        </template>
+    </category>	
+		
+	<!-- Question 1 - yes/no data -->
+	<category>
+	    <pattern>CStartQuiz</pattern>
+	    <template>Do you enjoy working with data?
+	    <button>
+	        <text>NO</text>
+	        <postback>nodata</postback>
+        </button>
+	    <button>
+	        <text>YES</text>
+	        <postback>yesdata</postback>
+        </button>
+	    </template>
+    </category>
+    <!-- Yes Data - Data Questions -->
+    <category>
+	    <pattern>yesdata</pattern>
+	    <template>Thats great! There are a variety of different careers in the coputer science field involving working with data.
+	    <br></br><bre></bre>
+	    Do you enjoy analyzing and interpreting data, or organizing and managing the storage/use of data?
+	    <button>
+	        <text>Analyzing and Interpreting</text>
+	        <postback>DAnalyze</postback>
+        </button>
+        <button>
+	        <text>Organizing and Managing</text>
+	        <postback>DManage</postback>
+        </button>
+        </template>
+    </category> 
+    <!-- Choose Data Science -->
+    <category>
+        <pattern>DAnalyze</pattern>
+        <template>Fantastic! Consider a career as a Data Scientist!
+                <card><!-- 2 -->
+                    <image>https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg</image>
+                    <title>Data Scientist</title>
+                    <subtitle>Analyzes and interprets complex data to help companies make data-driven decisions, often using machine learning and statistical methods.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>DatSciInfo</postback>
+                    </button>
+                </card>
+        </template>
+    </category>
+    <!-- Choose Database Management -->
+    <category>
+        <pattern>DManage</pattern>
+        <template>Fantastic! Consider a career as a Data Scientist!
+                <card><!-- 5-->
+	                <image>https://images.pexels.com/photos/4974916/pexels-photo-4974916.jpeg</image>
+	                <title>Database Administrator (DBA) </title>
+	                <subtitle>Manages and optimizes databases, ensuring data availability, integrity, and security within an organization.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>DBAInfo</postback>
+                    </button>
+                </card>
+        </template>
+    </category>
+
+    <!-- No Data - Question 2 Security -->
+    <category>
+	    <pattern>nodata</pattern>
+	    <template>Noted! <br></br><br></br>
+	    Do you enjoy staying updated with the latest security trends and vulnerabilities?
+	    <button>
+	        <text>NO</text>
+	        <postback>nosec</postback>
+        </button>
+	    <button>
+	        <text>YES</text>
+	        <postback>yessec</postback>
+        </button>
+        </template>
+    </category>     
+    <!-- Yes Sec - Choose CyberSecurity Analyst -->
+    <category>
+	    <pattern>yessec</pattern>
+	    <template>Thats great! Consider a career as a Data Scientist!
+	            <card><!-- 3 -->
+	                <image>https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg</image>
+	                <title>Cybersecurity Analyst</title>
+	                <subtitle>Protects an organization's systems and data by identifying security risks and implementing defensive measures.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>CybSecInfo</postback>
+                    </button>
+                </card>	    
+        </template>
+    </category>     
+    <!-- No Sec - Question 3 Programming  -->
+    <category>
+	    <pattern>nosec</pattern>
+	    <template>Gotcha, I'll keep that in mind! <br></br><br></br>
+	    Are you interested in learning multiple programming languages and frameworks?
+	    <button>
+	        <text>NO</text>
+	        <postback>nodev</postback>
+        </button>
+	    <button>
+	        <text>YES</text>
+	        <postback>yesdev</postback>
+        </button>
+        </template>
+    </category>        
+    <!-- Yes Dev - Choose Software Dev  -->
+    <category>
+	    <pattern>yesdev</pattern>
+	    <template>Thats great! Consider a career as a Software Developer!
+	            <card> <!-- 1 -->
+	                <image>https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg</image>
+	                <title>Software Developer</title>
+	                <subtitle>Develops and maintains software applications, often specializing in specific programming languages or frameworks.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>SofDevInfo</postback>
+                    </button>
+                </card>
+        </template>
+    </category>         
+    <!-- No Dev - Choose System Admin  -->
+    <category>
+	    <pattern>nodev</pattern>
+	    <template>I see! How about considering a career as a systems administrator? This career has little to do with data, and the focus is not on security or programming. Instead you get to manage and maintain IT infrastructure as a whole.
+                <card><!-- 4 -->
+	                <image>https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg</image>
+	                <title>Systems Administrator</title>
+	                <subtitle>Manages and maintains an organization's IT infrastructure, including servers, networks, and hardware.</subtitle>
+	                <button>
+	                    <text>More Info</text>
+	                    <postback>SysAdmInfo</postback>
+                    </button>
+                </card>
+        </template>
+    </category>             
+</aiml>
